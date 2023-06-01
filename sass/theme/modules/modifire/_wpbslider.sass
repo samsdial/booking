@@ -1,0 +1,40 @@
+.wpb-woo-products-slider
+	&.owl-theme
+  		.owl-nav [class*=owl-]
+	  		background-color: $gold !important
+
+	&.owl-theme
+		.owl-nav [class*=owl-]:hover
+			background-color: $darkGold !important
+
+.owl-carousel .owl-stage
+	.wpb-wps-slider-item
+		figure
+			figcaption
+				height: 139px !important
+
+				a.wpb-wps-product-title .pro_title
+					font-size: $text-xl
+
+				.pro_price_area
+					font-size: $text-xl
+					color: $gold
+
+				.wpb_cart_button
+					.add-to-cart-container
+						a.single_add_to_cart_button,
+						a.add_to_cart_button
+							width: 25%
+							background-color: $gold
+							display: inline-block
+							transition: $trs-site
+							&:hover
+								background-color: $darkGold
+								i.fa
+									color: $white
+									text-shadow: 0px 1px 2px ($black)
+
+							i.fa
+								transition: $trs-site
+								color: $black
+								text-shadow: 0px 1px 2px ($white)

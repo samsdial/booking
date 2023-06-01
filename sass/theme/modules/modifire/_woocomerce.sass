@@ -1,0 +1,227 @@
+.woocommerce-info
+	padding: 1em 2em 1em 1em
+	border-top: 0 solid transparent
+	&::before
+		content: ""
+//
+.woocommerce
+	ul.products.columns-3
+		li.product
+			padding: 15px
+			background-color: $white
+			border-radius: 12px
+			box-shadow: $boxShadow
+			background-color: $white
+			border: none
+			text-align: center
+			overflow: hidden
+			.woocommerce-loop-category__title
+				+header
+					padding: .9em 0 0 0
+					text-transform: uppercase
+					color: $second
+					font-weight: 200
+					font-family: $tf
+					height: 110px
+					font-size: $font-size-base //rem-calc(11px)
+			.price
+				font-size: 0
+				span.woocommerce-Price-amount.amount
+					color: $tertiary
+					font-size: $h3-font-size !important
+					font-weight: 900
+					font-family: $tf
+					display: block
+
+//Icon button Cart
+.single_add_to_cart_button
+	&:hover
+		i.fa
+		  color: $gold
+	i.fa
+		color: $black
+		font-size: $font-size-base
+
+
+// Woocommerce list
+.woocommerce ul.products li.product .price
+	text-transform: uppercase
+	color: $black
+	font-weight: 200
+	font-family: $tf
+	font-size: $font-size-base //rem-calc(12px)
+
+
+
+
+
+
+// WOOCOMERCE BOX
+.woocommerce
+	&--content
+		.site-main
+			.wpf-search-container
+				.woocommerce-products-header
+					.page-title
+						font-size: $h-font-size
+						font-weight: 900
+						margin-bottom: 22px
+						color: $primary
+				.products
+					padding:  0 22px 0 22px
+					.product-type-simple
+						padding: 15px
+						background-color: $white
+						border-radius: 12px
+						box-shadow: $boxShadow
+						background-color: $white
+						border: none
+						text-align: center
+						overflow: hidden
+						a
+							img
+								padding: 22px
+							.onsale
+								border-radius: 0
+								background-color: $tertiary
+								padding: 0
+								font-size: $text-tiny //rem-calc(11px)
+								transform: rotate(37deg)
+								width: 100%
+								left: 78px
+								top: 17px
+						.woocommerce-loop-product__title
+							padding: .9em 0 0 0
+							text-transform: uppercase
+							color: $second
+							font-weight: 200
+							font-family: $tf
+							min-height: 65px
+							height: 110px
+							font-size: $font-size-base //rem-calc(11px)
+						.price
+							padding: .3em .9em 0 .9em
+							display: flex
+							flex-direction: column
+							align-items: center
+							del
+								span.amount
+									display: block
+									padding: 0 .5em
+									color: $gray
+									font-size: $text-small
+									margin-bottom: 0
+									font-weight: 600
+									font-family: $tf
+							ins
+								text-decoration: none
+								span.amount
+									color: $tertiary
+									font-size: $h-font-size
+							span.amount
+								color: $tertiary
+								font-size: $h3-font-size
+								font-weight: 900
+								font-family: $tf
+								margin-bottom: 5px
+
+
+.woocommerce
+	form
+		.form-row
+			width: 100%
+
+
+// Pagination
+
+
+
+
+
+
+
+// Alerts Message
+.woocommerce-message
+	border: none
+	&::before
+		color: $gold
+	.button
+		background-color: $gold !important
+		color: $black
+		padding: 6px 22px
+		text-transform: uppercase
+		cursor: pointer
+		border-radius: 0 !important
+		font-family: $tf
+		display: inline-block
+		vertical-align: middle
+		+press
+			background-color: $darkGold !important
+			color: $black
+
+
+
+//Miga de pan
+.woocommerce
+	.woocommerce-breadcrumb
+		text-align: right
+	.woocommerce-products-header
+		h1.page-title
+			font-size: $title-font-size
+			text-transform: uppercase
+			letter-spacing: 0.5rem
+			margin-bottom: 15px
+			color: $black
+
+
+//woocemerce page
+.woocommerce
+	#content
+		div.product
+			div.images
+				width: 100%
+				display: flex
+				+MQ(L)
+					width: 44%
+
+			div.summary
+				width: 100%
+				+MQ(L)
+					width: 52%
+
+.woocommerce
+	div.product div.images
+		.flex-viewport
+			width: 78%
+			order: 2
+		.flex-control-thumbs
+			display: flex
+			flex-direction: column
+			flex-wrap: wrap
+			justify-content: center
+			li
+				width: 60%
+				padding: 0 0 10px
+
+//Filter
+.wpfFilterWrapper
+	background: rgba(242,239,242,1)
+	background: linear-gradient(to bottom, rgba(242,239,242,1) 0%, rgba(242,239,242,1) 1%, rgba(255,252,255,1) 100%)
+	padding-left: 22px !important
+	.wpfFilterTitle
+		line-height: inherit
+		margin-bottom: 0
+		font-family: $tf
+		display: flex
+		align-items: center
+		.wfpTitle
+			font-size: 1.3rem
+			letter-spacing: 0.015rem
+			height: inherit
+			margin-bottom: 10px
+			width: 90%
+
+.widget-area
+	aside.widget
+		+MQ(M)
+			margin-top: 165px

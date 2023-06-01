@@ -1,0 +1,177 @@
+
+.submenu
+	background: $black
+	box-shadow: 0 8px 24px -5px $black
+  	top: 50px
+	opacity: 1
+	transform: translateY(0px)
+	transition: all .3s ease
+	position: absolute
+	z-index: 3
+	+MQMAX(M)
+		top: -112px
+
+
+.submega_menu_nav
+	visibility: hidden
+	opacity: 0
+	&.active
+		visibility: visible
+		opacity: 1
+	&.animated
+		.submenu
+		  	opacity: 0
+		  	transform: translateY(-125px) !important
+
+.navbar-sub-mega
+	padding-bottom: 36px
+	display: flex
+	flex-direction: column
+	//column-count: 4
+	//column-gap: 0
+
+	.menu-column
+		margin-bottom: 25px
+		+MQ(SL)
+			margin-bottom: 65px
+
+		&:nth-child(2)
+			+MQ(SL)
+				margin-bottom: 120px
+
+		&:nth-child(3)
+			+MQ(SL)
+				margin-bottom: 120px
+
+		&:nth-child(4),
+		&:nth-child(5)
+			+MQ(SL)
+				margin-bottom: 24px
+
+		&:nth-child(1) > ul > li
+			> a
+				text-decoration: underline
+				color: $gold
+
+			> ul li
+				padding-left: 6px
+				> a
+					font-size: $text-sm
+
+		> a
+			font-family: $pf
+			margin-bottom: 6px
+			display: block
+
+		a
+			color: $white
+			text-transform: uppercase
+
+.navbar
+	&-group
+		position: relative
+		top: -33px
+		height: 0
+		+MQ(SL)
+			top: -55px
+
+	&-brand
+		margin: 0
+		&--mobile img
+			display: inline-block
+			width: 50%
+			+MQ(SL)
+				display: none
+
+	&-brand img.img-fluid
+		width: 55%
+		margin: 0
+		display: none
+		+MQ(SL)
+			display: inline-block
+	&-site
+		background-color: $black
+		border: transparent solid 0
+		padding: 0
+		+MQ(M)
+			padding: 33px 0
+
+		.active>.nav-link
+			color: $itemHoverNavbar
+		.nav-link
+			text-transform: uppercase
+			color: $itemNavbar
+			font-family: $tf
+			text-align: center
+			+press
+				color: $itemHoverNavbar
+.navbar-light
+	.navbar-toggler-icon
+		background-imagen: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%200, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+
+	.nav
+		flex-direction: column!important
+		+MQ(L)
+			flex-direction: row!important
+
+  	.navbar-nav
+		.menu-item
+			margin-right: auto
+			margin-left: auto
+			margin-bottom: 22px
+
+		.nav-link
+			text-transform: uppercase
+			padding: 0 25px
+
+		.active>.nav-link
+			border: 1px solid black
+			border-radius: 22px
+
+// Navbar site
+.navbar
+	&_site
+
+
+.navbar
+	&_shop
+		width: 100%
+		display: block
+		.nav
+			margin-top: 14px
+
+			li.menu-item
+				position: relative
+				&:first-child
+					a.nav-link:after
+						content: "\e903"
+				&:last-child
+					a.nav-link:before
+						content: "\e900"
+
+				a.nav-link
+					position: relative
+					width: 50px
+					height: 50px
+					z-index: 1000
+					text-indent: 200%
+					white-space: nowrap
+					font-size: 0
+					cursor: pointer
+					padding: 0
+					transition: all 0.5s ease
+					color: $white
+					&:after,
+					&:before
+						font-size: 30px
+						font-family: 'icomoon' !important
+						position: absolute
+						top: 0
+						left: 0
+						letter-spacing: -2.0rem
+
+					&:hover
+				  		color: $gold
+
+
+

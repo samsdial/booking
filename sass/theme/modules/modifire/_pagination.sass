@@ -1,0 +1,58 @@
+.pagination
+	justify-content: center
+
+.page-item
+	.page-link
+		color: $white
+		background-color: transparent
+		font-family: $pf
+		border-color: transparent
+
+	&.active
+		.page-link
+			background: transparent
+			border-color: transparent
+			color: $gold
+
+.woocommerce
+	nav.woocommerce-pagination
+		ul
+			border: 0px solid transparent
+			li
+				border: 0px solid transparent
+				span.current
+					background-color: transparent
+					color: $black
+
+
+			&.page-numbers
+				li
+					a, span
+						font-family: $pf
+					a
+						border: none
+
+					a.prev.page-numbers
+						border-top-left-radius: 6px
+						border-bottom-left-radius: 6px
+						padding: .5rem .5rem !important
+
+					a.next.page-numbers
+						border-top-right-radius: 6px
+						border-bottom-right-radius: 6px
+						padding: .5rem .5rem !important
+
+				li:first-child
+					span.page-numbers
+						border: none
+
+				li:last-child
+					span.page-numbers
+						border: none
+
+span.page-numbers,
+a.page-numbers
+	padding: .5rem .75rem !important
+
+//.page-item:first-child .page-link
+// padding: .5rem .75rem

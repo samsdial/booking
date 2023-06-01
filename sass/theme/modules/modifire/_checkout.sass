@@ -1,0 +1,197 @@
+.page-template-default.page
+	.widget-area
+	  	display: none
+
+	.woocommerce--content
+		margin: 65px 55px
+
+		.site-main
+
+			.entry-header
+				text-align: right
+
+				.entry-title
+					font-size: $text-4xl
+					text-transform: uppercase
+					letter-spacing: 0.5rem
+					margin-bottom: 15px
+					color: $black
+
+
+.woocommerce-billing-fields h3
+	font-size: $text-4xl
+	letter-spacing: 0.53rem
+
+// coupon woocommerce-billing-fields
+.woocommerce
+	&-form-coupon-toggle
+		  .woocommerce-info
+			  border-top-color: transparent
+			  font-family: $tf
+			  padding-left: 1.6em
+
+			  &:before
+				  content: ""
+
+			  a.showcoupon
+				  font-family: $sf
+				  color: $black
+				  text-decoration: underline
+
+//Billing
+.woocommerce
+	&-billing-fields
+	  	margin-bottom: 22px
+	&-additional-fields,
+	&-billing-fields
+		padding: 0
+
+		+header
+			color: $black
+			margin-bottom: 15px
+			text-transform: uppercase
+			font-size: $text-2xl //rem-calc(22px)
+
+		.woocommerce-additional-fields__field-wrapper
+			p.form-row
+				.woocommerce-input-wrapper
+					textarea
+						border: 1px solid $black
+					  	color: $black
+
+		.woocommerce-billing-fields__field-wrapper
+			p.form-row
+				display: inline-block
+				+MQ(SL)
+				  	width: 50%
+				&:nth-child(1n)
+					+MQ(SL)
+					  	padding-right: 15px
+
+
+				&#billing_company_field
+					+MQ(SL)
+						width: 100%
+
+
+			  	label .required
+				  	color: $gold
+
+
+
+				.woocommerce-input-wrapper
+					textarea
+					  	box-shadow: $shadow !important
+					input.input-text
+						border: 1px solid $black !important
+						background-color: $white !important
+						height: 45px !important
+						border-radius: 4px !important
+						font-size: $font-size-base //1.0625rem
+						color: $black
+						padding: .375rem .75rem
+
+
+// Container select new
+.select2-container--default
+	.select2-selection--single
+		border: 1px solid $black
+		height: 45px!important
+
+		.select2-selection__rendered
+			padding-top: 7px
+
+//border-radius: 4px;
+.select2-container--default
+	.select2-results__option--highlighted[aria-selected]
+		background-color: $gold !important
+		color: $black !important
+
+	.select2-selection--single .select2-selection__arrow
+		height: 44px
+		b
+			border-color: $black transparent transparent transparent
+
+	&.select2-container--open .select2-selection--single .select2-selection__arrow b
+		border-color: transparent transparent $black transparent
+
+	.select2-search--dropdown .select2-search__field
+		border: 1px solid $black
+
+	.select2-dropdown
+		border: 1px solid $black
+
+// Required *
+.woocommerce
+	form
+		.form-row
+			.required
+				color: $gold
+
+
+
+//Direccion diferente
+.woocommerce-shipping-fields
+	.input-text,
+	.form-control
+		border: 1px solid $black
+		height: 44px
+
+// Box Resume
+.box-resume-order
+	margin-top: 66px
+	color: $black
+	.woocommerce-checkout-review-order
+		.title h3
+			text-align: right
+			text-transform: uppercase
+			font-family: $tf
+			font-size: $text-lg
+			letter-spacing: 0.58rem
+			margin-bottom: 22px
+
+		.woocommerce-checkout-payment
+			border-radius: 0 !important
+
+			li.woocommerce-info
+				padding: 1em 1em
+				font-size: $text-sm
+				border-top:	0 solid transparent
+				&:before
+					content: ""
+
+			.place-order
+
+				p.form-row
+					label.checkbox.custom-control
+				  		line-height: 0.015rem
+
+				.woocommerce-terms-and-conditions-wrapper
+					margin-bottom: 15px
+					a.woocommerce-privacy-policy-link
+						color: $gold
+						font-family: $tf
+						text-shadow: 1px 1px $white
+				.btn-primary
+					background-color: $gold
+					width: 100%
+
+		.shop_table
+			  border-collapse: collapse
+
+			  thead tr th
+				  font-family: $tf
+			  tfoot
+				  tr
+					  td,
+					  th
+						  background-color: $gold
+						  color: $black
+						  font-family: $tf
+						  border: 1px solid $gold
+
+// Notification
+.woocommerce-NoticeGroup
+	ul.woocommerce-error
+		border-top: 0 solid transparent
+

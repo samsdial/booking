@@ -1,0 +1,290 @@
+// BOX brands
+.box-brands
+	margin-bottom: $spacers-mgb-box
+
+	&--title h2
+		font-family: $sf
+		font-size: $text-6xl
+
+	&--subtitle h3
+		font-size: $text-4xl
+
+// BOX product
+.box-product
+	margin-bottom: $spacers-mgb-box
+
+	&--intro
+		background-color: $black
+		padding: 39px 55px
+
+	&--line
+		display: block
+		height: 9px
+		width: 100%
+	  	background: rgb(0,194,255)
+		background: linear-gradient(90deg, rgba(0,194,255,1) 0%, rgba(0,194,255,1) 51%, rgba(13,138,8,1) 51%, rgba(13,138,8,1) 69%, rgba(219,213,0,1) 69%, rgba(219,213,0,1) 86%, rgba(255,94,0,1) 86%, rgba(255,94,0,1) 100%)
+
+	&--title
+		font-family: $pf
+		color: $white
+		font-size: $text-2xl
+		text-transform: uppercase
+
+// BOX Category product
+.box-category-product
+	margin-bottom: $spacers-mgb-box
+
+	&--title
+		display: block
+		margin-bottom: $spacers7
+
+		h2
+			+titleG
+
+	&--list
+		display: grid
+		grid-template-columns: 1fr
+		grid-gap: 22px
+		margin: 0 auto
+		width: 70%
+
+		+MQ(M)
+			width: 100%
+			grid-template-columns: 1fr 1fr
+		+MQ(L)
+			grid-template-columns: 1fr 1fr 1fr
+
+	&--item
+		.btn-category
+			display: flex
+			border: 2px solid $black
+			border-radius: $card-site-radius
+			padding: 30px
+			text-align: center
+			transition: $trs-site
+
+			+MQ(SL)
+				padding: 40px
+				min-height: 136px
+
+			+MQ(L)
+				padding: 60px
+				min-height: 229px
+
+			&:hover, &.active
+				text-decoration: none
+				background-color: $black
+				h3
+					color: $white
+			h3
+				font-size: $text-lg
+				+MQ(SL)
+					font-size: $text-2xl
+
+// BOX promotions
+.box-promotions
+	&--slider
+		margin-bottom: $spacers-mgb-box
+		background-color: lightskyblue
+		padding: 60px
+
+	&--title
+		text-align: center
+
+		h2
+		  +titleG
+
+// NEWS
+.box-news
+	margin-bottom: $spacers-mgb-box
+
+	&--intro
+		padding: 55px
+
+	&--title
+		margin-bottom: $spacers-mgb-title
+		h2
+		  +titleG
+
+	&--description
+		width: 55%
+		margin: 0 auto
+
+		p
+			font-size: $text-2xl
+
+	&--content
+		padding: 22px
+		padding-top: 5px
+
+	&--hr
+		display: block
+		width: 70%
+		margin: 0 auto
+		height: 5px
+		margin-bottom: $spacers-mgb-title
+		+bgGrad
+
+	&--line
+		width: 100%
+		height: 3px
+		background-color: $black
+		+MQ(SL)
+			width: 5px
+			height: auto
+
+	&--line-hz
+		width: 100%
+		height: 3px
+		background-color: $black
+
+	&--actions
+		background-color: lightskyblue
+		position: relative
+		float: left
+		overflow: hidden
+		margin: 10px 1%
+		min-width: 350px
+		max-width: 600px
+		width: 97%
+		height: 450px
+		text-align: left
+		cursor: pointer
+
+		img
+			position: relative
+			display: block
+			min-height: 100%
+			max-width: 100%
+			opacity: 0.8
+
+		figcaption
+			position: absolute
+			bottom: 0
+			left: 0
+			padding: 2em
+
+			p
+				color: $white
+				font-size: $text-xl
+				margin-bottom: 12px
+
+		figcaption::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			height: 100%
+			width: 135%
+			background: rgba(255,255,255,0.5)
+			transition: transform 0.6s
+			transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-167%,0)
+
+		&:hover figcaption::before
+			transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,167%,0)
+
+// CALL TO ACTION
+.box-call
+	margin-bottom: $spacers-mgb-box
+
+	&--title
+		h2
+			margin-bottom: $spacers-mgb-title
+			+titleG
+
+
+	&--content h4
+		font-size: $text-3xl
+		margin-bottom: $spacers-mgb-title
+
+// Footer
+.box-footer
+	&--brand
+		display: block
+		margin-bottom: 35px
+
+	&--line
+		display: block
+		width: 100%
+		height: 7px
+		+bgGrad
+
+
+	&--menu
+		margin-bottom: 22px
+
+	&--title
+		color: $white
+		font-size: $text-4xl
+
+	&--site
+		p
+			width: 100%
+			color: $white
+			font-size: $text-xs
+			font-family: $qf
+			+MQ(L)
+				width: 50%
+
+	&--list
+		.menu-item
+			text-align: right
+			a
+				color: $white
+				font-size: $text-lg
+				text-transform: uppercase
+				padding: 0
+				padding-bottom: 11px
+
+	&--social
+		&-list
+			li
+				display: inline-block
+				padding: 0 9px
+
+				&:last-child
+					padding-right: 0
+
+//BOX SEARCH
+.box-search
+	&--content
+		width: 100%
+		margin-left: auto
+		+MQ(L)
+			width: 35%
+
+		.form-control
+			background-color: transparent
+			border: none
+			padding: 0
+			padding-left: 5px
+
+			.input-group
+				left: 3px
+				.input-group-append
+					margin-left: -3px
+
+
+			.field
+				border: 2px solid $lightGray
+				border-top-left-radius: 6px
+				border-bottom-left-radius: 6px
+				padding: 0 25px
+				width: 85%
+				+MQ(S)
+					width: 90%
+
+				+MQ(L)
+					width: 89%
+
+				&::placeholder
+					font-size: $text-sm
+					text-transform: uppercase
+					color: $lightGray
+
+
+			.btn-search
+				background-color: $skyBlue
+				border-radius: 6px
+
+

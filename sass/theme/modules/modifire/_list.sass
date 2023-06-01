@@ -1,0 +1,18 @@
+.list
+	&-social
+		li
+			display: inline
+			padding-left: 22px
+		li:first-child
+		  	padding-left: 0
+
+
+.list-inline
+	&-grid
+		display: table
+		+MQMAX(SL)
+			display: block
+		.list-inline-item
+			display: table-cell
+			+MQMAX(SL)
+				display: inline-block

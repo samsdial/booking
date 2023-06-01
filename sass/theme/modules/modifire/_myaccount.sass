@@ -1,0 +1,54 @@
+.woocommerce-MyAccount-content
+	p
+	  margin-bottom: 12px
+
+	strong
+		font-family: $tf
+
+	.woocommerce-Addresses
+	  	.woocommerce-Address
+	  		.woocommerce-Address-title
+				a.edit
+					background-color: $gold !important
+					color: $black
+					padding: 6px 22px
+					text-transform: uppercase
+					cursor: pointer
+					display: inline-block
+					vertical-align: middle
+					transition: $trs-site
+					+press
+						background-color: $darkGold !important
+						color: $white
+
+.woocommerce-MyAccount-navigation
+	.list-group
+		a:nth-child(3)
+			display: none
+
+		a:nth-child(4):after
+			content: "Dirección"
+
+.woocommerce-MyAccount-content
+	.woocommerce-EditAccountForm
+		.woocommerce-form-row
+			input.woocommerce-Input
+				height: calc(1.5em + .75rem + 2px)
+				padding: .375rem .75rem
+				border: 1px solid #ced4da
+				border-radius: 4px
+
+	fieldset
+		width: 70%
+		background-color: $silver
+		margin-bottom: 22px
+		padding: 12px
+
+		legend
+			font-family: $tf
+		.woocommerce-form-row
+			flex-direction: column
+
+// Pedido muestra de pedido
+.woocommerce-page .col2-set .col-1
+	max-width: 49% !important

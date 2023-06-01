@@ -1,0 +1,115 @@
+//Single page
+.single.single-product
+	.widget-area
+	  	display: none
+
+	.woocommerce--content
+		margin-top: 9px
+
+	.woocommerce-breadcrumb
+		margin-bottom: 90px
+
+	.product
+		.summary.entry-summary
+			.product_title
+				font-size: $text-3xl
+				color: $black
+				margin-bottom: 24px
+
+			p.price
+				color: $gold
+				font-size: $text-3xl
+				font-family: $tf
+				margin-bottom: 24px
+
+			.woocommerce-product-details__short-description
+				width: 100%
+				margin-bottom:  24px
+
+			.cart
+				display: flex
+
+				.tinv-wraper.tinv-wishlist
+					width: 9%
+					.tinvwl_add_to_wishlist_button
+						margin-bottom: 0
+						&.tinvwl-icon-heart:before
+							font-size: 35px
+
+				.quantity
+					float: inherit
+					width: 25%
+
+					input.text
+						border: 2px solid $silver
+						color: $gold
+						font-size: $text-xl
+						font-family: $tf
+
+
+				.single_variation_wrap
+					display: block
+					.single_variation
+						width: 100%
+					.woocommerce-variation-add-to-cart
+						display: flex
+						.quantity
+							width: 25%
+
+			.product_meta
+
+				.tagged_as,
+				.posted_in
+					display: block
+
+				.tagged_as,
+				.posted_in
+					a
+						color: $gold
+						font-family: $tf
+						+press
+							color: $darkGold
+
+
+
+			.btn-outline-primary
+				background-color: $gold !important
+				color: $black
+				padding: 6px 22px
+				text-transform: uppercase
+				cursor: pointer
+				display: inline-block
+				vertical-align: middle
+				+press
+				  background-color: $darkGold !important
+				  color: $black
+
+
+// Products list carrusel general
+.woocommerce ul.products li.product a img
+	margin: 0
+
+.woocommerce ul.products li.product a
+	text-align: left
+
+.woocommerce ul.products[class*=columns-] li.product div
+	display: table-cell
+	width: 19px
+	&.tinv-wraper.tinv-wishlist .tinvwl-tooltip
+		display: none
+
+ul.products li.product .tinvwl_add_to_wishlist_button
+	margin: 0 !important
+
+form.variations_form.cart div[data-total]
+  	width: 100%
+
+.woocommerce div.product form.cart .variations label
+  	font-family: $tf
+  	font-size: $text-xl
+
+.woo-variation-swatches .wvs-style-squared.variable-items-wrapper .variable-item:not(.radio-variable-item)
+  	border-radius: 50%
+
+.woo-variation-swatches .variable-items-wrapper .variable-item:not(.radio-variable-item).color-variable-item .variable-item-span-color, .woo-variation-swatches .variable-items-wrapper .variable-item:not(.radio-variable-item).image-variable-item .variable-item-span-color
+	border-radius: 50%

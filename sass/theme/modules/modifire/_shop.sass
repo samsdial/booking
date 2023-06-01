@@ -1,0 +1,63 @@
+// products items
+.woocommerce-page ul.products li.product
+	width: 48%
+	padding: 16px 0
+	margin: 0
+	float: inherit
+	+MQ(SL)
+		width: 30%
+		padding: 16px 0
+
+	+MQMAX(L)
+	  	width: 29%
+
+// products
+.woocommerce ul.products
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+
+
+
+.woocommerce-page ul.products
+	li:nth-child(2),
+	li:nth-child(5),
+	li:nth-child(8),
+	li:nth-child(11),
+	li:nth-child(14)
+		+MQ(M)
+			margin-left: 22px !important
+			margin-right: 22px !important
+
+.woocommerce-page
+	ul.products[class*=columns-]
+		li.product
+			+MQMAX(M)
+				width: 70%
+				margin: 0 auto
+
+.woocommerce
+	ul.products[class*=columns-] li.product,
+	.woocommerce-page ul.products[class*=columns-] li.product
+	  	float: inherit
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title,
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product h3
+	padding: .9em 0 0 0
+	color: $black
+	font-weight: 200
+	font-family: $sf
+	font-size: $font-size-base //rem-calc(12px)
+	text-transform: uppercase
+
+.woocommerce-page
+	ul.products
+		li.product
+			a img
+				margin-bottom: 2px
+
+
+			.tinvwl_add_to_wishlist_button
+				margin: 0 !important
+

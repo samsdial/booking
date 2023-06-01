@@ -1,0 +1,52 @@
+.blog
+	background-color: $black
+
+	main.site-main
+		width: 100%
+
+		+MQ(L)
+			width: 90%
+			columns: 200px 2
+			column-gap: 3rem
+
+		article
+			display: flex
+			flex-direction: row
+			margin-bottom: 150px
+
+			figure
+				height: 303px
+				overflow: hidden
+
+			&.blog_title h1
+				font-family: $sf
+				color: $white
+				font-size: $text-9xl
+				text-transform: uppercase
+
+
+			img.attachment-large
+				width: 100%
+				height: auto
+
+			.entry-content
+				p
+					color: $white
+					display: -webkit-box
+					max-width: 200px
+					height: 45px
+					-webkit-line-clamp: 4
+					-webkit-box-orient: vertical
+					overflow: hidden
+					order: 4
+
+				.entry-date
+					color: $gold
+					text-transform: capitalize
+
+				.entry-header
+					.entry-title
+						font-size: $text-3xl
+						text-transform: uppercase
+						a
+						  color: $white

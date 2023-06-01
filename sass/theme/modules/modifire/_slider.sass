@@ -1,0 +1,332 @@
+.slick-prev,
+.slick-next
+	z-index: 2
+	height: auto
+	width: auto
+	&:before
+		font-family: 'icomoon' !important
+		speak: never
+		font-size: $text-5xl
+		font-style: normal
+		font-weight: normal
+		font-variant: normal
+		text-transform: none
+		opacity: 1
+		line-height: 1
+		-webkit-font-smoothing: antialiased
+		-moz-osx-font-smoothing: grayscale
+.slick-prev
+	left: -41px
+	&:before
+	  	content: "\e901"
+.slick-next
+	right: -41px
+	&:before
+	  	content: "\e902"
+
+// SLIDER intro home
+.slider-intro
+	&-height
+		height: 150px
+		+MQ(S)
+	  		height: 250px
+		+MQ(SL)
+	  		height: 560px
+		+MQ(L)
+	  		height: 575px
+		+MQ(XL)
+	  		height: 700px
+
+	&-content
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		.slider-text
+			text-align: center
+			+MQ(S)
+			  	width: 100%
+			  	text-align: center
+			+MQ(SL)
+			  	width: 50%
+			  	text-align: left
+
+	&-header
+		font-family: $tf
+		font-size: $text-lg
+		letter-spacing: 0.28rem
+		+MQ(S)
+			font-size: $text-3xl
+		+MQ(L)
+		  font-size: $text-6xl
+
+	&-paragraph
+		font-family: $sf
+		font-size: $text-sm
+		+MQ(S)
+			font-size: $text-base
+		+MQ(L)
+	  		font-size: $text-2xl
+
+// SLIDER HOPE
+
+.slider
+  width: 95%
+  margin: 0 auto
+  .slick-track
+	  padding-top: 53px
+	  padding-bottom: 53px
+  .slick-slide
+	  text-align: center
+	  transition: transform 0.3s ease-in-out
+  .slick-slide:not(.slick-current)
+	  .box_hope--text
+	  	  display: none
+  .slick-slide.slick-current
+	  transform: scale(2.5)
+	  position: relative
+	  z-index: 1
+	  +MQ(L)
+	  	  transform: scale(1.5)
+	  img.box_hope--img
+		  filter: brightness(0.5)
+		  width: 100%
+
+  .slick-next, .slick-prev
+  	top: 38%
+
+  .slick-prev
+	  left: 30px
+	  +MQ(S) // 480px
+		  left: 35px
+	  +MQ(M) // 768px
+		  left: 80px
+	  +MQ(L) // 1024px
+		  left: 255px
+	  +MQ(XL) // 1239px
+		  left: 275px
+	  @media (min-width: $XXL)
+	  	  left: 310px
+	  @media (min-width: 1990px)
+	  	  left: 325px
+
+  .slick-next
+	  right: 30px
+	  +MQ(S) // 480px
+		  right: 35px
+	  +MQ(M) // 768px
+		  right: 80px
+	  +MQ(L) // 1024px
+		  right: 255px
+	  +MQ(XL) // 1239px
+		  right: 275px
+	  @media (min-width: $XXL)
+	  	  right: 310px
+	  @media (min-width: 1990px)
+	  	  right: 325px
+
+
+// SLIDER HOME
+.slider-content-home
+	position: relative
+	padding: 20px
+	padding-bottom: $spacers-mgb-box
+
+	+MQ(L)
+		padding: 55px
+
+	&--content
+		padding: 15px
+		+MQ(L)
+			padding: 22px
+
+	.slick-slider
+		width: 100%
+		.slick-list
+			background-color: $black
+
+.slider-content-nav
+	position: absolute
+	bottom: 0
+	width: 100%
+
+.slider-nav .slick-slide
+  color: black
+  padding-left: 6px
+  padding-right: 6px
+
+//Benefist mobile
+.slider-benefist-mobile
+	.slick-prev,
+	.slick-next
+		z-index: 2
+		background-color: transparent
+		width: 50px
+		height: 50px
+		border-radius: 100%
+		&:before
+			font: inherit !important
+			width: 0
+			height: 0
+			opacity: 1
+	.slick-prev
+		left: -4%
+		&:before
+			border-right: 12px solid $second
+			border-top: 9px solid transparent
+			border-bottom: 9px solid transparent
+			margin-right: 5px
+	.slick-next
+		right: -4%
+		&:before
+			border-left: 12px solid $second
+			border-top: 9px solid transparent
+			border-bottom: 9px solid transparent
+
+//Slider Product
+.slider-list-prod
+	width: 84%
+	margin: auto
+	.slick-prev,
+	.slick-next
+		z-index: 2
+		background-color: $tertiary
+		width: 50px
+		height: 50px
+		border-radius: 100%
+		&:before
+			font: inherit !important
+			width: 0
+			height: 0
+			opacity: 1
+	.slick-prev
+		left: -4%
+		&:before
+			border-right: 12px solid $white
+			border-top: 9px solid transparent
+			border-bottom: 9px solid transparent
+			margin-right: 5px
+	.slick-next
+		right: -4%
+		&:before
+			border-left: 12px solid $white
+			border-top: 9px solid transparent
+			border-bottom: 9px solid transparent
+
+
+// Slider GALLERY
+.slider-gallery
+	width: 100%
+	//height: 400px
+	margin: auto
+	.slick-prev,
+	.slick-next
+		z-index: 2
+		top: -40px
+		bottom: inherit
+		background-color: $tertiary
+		width: 50px
+		height: 50px
+		border-radius: 100%
+		&:before
+			font: inherit !important
+			width: 0
+			height: 0
+			opacity: 1
+	.slick-prev
+		+MQMAX(SL)
+			left: 35%
+		+MQ(SL)
+			left: 47%
+		+MQ(L)
+			left: 43%
+		&:before
+			border-right: 7px solid $white
+			border-top: 6px solid transparent
+			border-bottom: 6px solid transparent
+			margin-right: 5px
+	.slick-next
+		+MQMAX(SL)
+			right: 35%
+		+MQ(SL)
+			right: 47%
+		+MQ(L)
+			right: 43%
+		&:before
+			border-left: 7px solid $white
+			border-top: 6px solid transparent
+			border-bottom: 6px solid transparent
+
+// Slider HOTELS
+.slider-hotels
+	width: 100%
+	//height: 400px
+	margin: auto
+	.slick-prev,
+	.slick-next
+		z-index: 2
+		top: inherit
+		bottom: -30px
+		transform: rotate(-90deg)
+		background-color: $tertiary
+		width: 25px
+		height: 25px
+		border-radius: 100%
+		&:before
+			font: inherit !important
+			width: 0
+			height: 0
+			opacity: 1
+	.slick-prev
+		left: 40%
+		&:before
+			border-right: 7px solid $white
+			border-top: 6px solid transparent
+			border-bottom: 6px solid transparent
+			margin-right: 5px
+	.slick-next
+		right: 40%
+		&:before
+			border-left: 7px solid $white
+			border-top: 6px solid transparent
+			border-bottom: 6px solid transparent
+	.slick-vertical
+		.slick-slide
+			height: 250px
+
+.slick-dots
+	bottom: -44px
+	li button:before
+		font-size: 35px
+
+	li.slick-active button:before
+		font-size: 47px
+
+
+// BOX BENEFIT
+.box-benefit-slider
+	.slick-dots
+		li button:before
+			color: $white
+		li.slick-active button:before
+			color: $white
+			opacity: 1
+
+// BOX Slider SHOP
+.box_shop--slider .js-shop--slider
+	.slick-prev
+		left: -95px
+	.slick-next
+		left: -41px
+		right: inherit
+
+	.slick-prev,
+	.slick-next
+		background-color: $black
+		top: 25px
+
+
+	.slick-prev:before,
+	.slick-next:before
+		color: $white
+		font-size: 2.5rem
